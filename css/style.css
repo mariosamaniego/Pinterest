@@ -60,6 +60,10 @@ header h1{
     color: black;
 }
 
+.list a:hover{
+    text-decoration: underline;
+}
+
 .inicio button{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 16px;
@@ -76,6 +80,11 @@ header h1{
     padding-right: 12px;
     margin-right: 8px;
 }
+
+.inicio button:hover{
+    background-color: #ad081b;
+}
+
 .registro button{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 16px;
@@ -90,4 +99,8 @@ header h1{
     display: inline-block;
     padding-left: 12px;
     padding-right: 12px;
+}
+
+.registro button:hover{
+    background-color: #e2e2e2;
 }
