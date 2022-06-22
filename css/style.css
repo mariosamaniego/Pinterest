@@ -191,3 +191,18 @@ main{
         display: none;
     }
 }
+
+
+.roundImage {
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    transition: 0.3s;
+    opacity: 1;
+    margin: 5px;
+}
+
+.roundImage:hover {
+    opacity: 0.6
+}
+
