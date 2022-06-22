@@ -4,103 +4,190 @@ body{
 }
 
 header{
+    background-color: white;
     width: 100%;
-}
-
-.contenedor{
+    height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
-    padding: 16px;
-    box-sizing: border-box;
+    position: fixed;
+    top: 0;
 }
 
-header div{
+.contenedor{
+    background-color: white;
+    width: 100%;
+    height: 56px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-header h1{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color: #c00;
-    letter-spacing: -1px;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 0px 0px 0px 4px;
-    
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .icono{
-    width: 32px;
-    height: 32px;
-}
-
-.index{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 12px 0 12px;
+    width: 48px;
+    height: 48px;
 }
 
-.list{
-    padding-right: 24px;
+.icono img{
+    width: 30px;
+    height: 30px;
 }
 
-.list div{
-    text-align: center;
-    margin: 16px;
+.indexg{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.list a{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
+.pestaña{
+    min-width: 60px;
+    height: 48px;
+    padding: 0 16px 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.pestaña a{
     text-decoration: none;
-    color: black;
-}
-
-.list a:hover{
-    text-decoration: underline;
-}
-
-.inicio button{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.activo{
+    background-color: black;
+}
+
+.activo a{
     color: white;
-    border: 0;
-    background-color: #e60023;
-    border-radius: 24px;
-    min-width: 60px;
-    min-height: 40px;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 8px;
 }
 
-.inicio button:hover{
-    background-color: #ad081b;
+.inactivo{
+    background-color: white;
 }
 
-.registro button{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
+.inactivo a{
     color: black;
-    border: 0;
-    background-color: #efefef;
-    border-radius: 24px;
-    min-width: 60px;
-    min-height: 40px;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
-.registro button:hover{
-    background-color: #e2e2e2;
+.desplegable:hover .contenido{
+    display: flex;
+}
+
+.contenido{
+    min-width: 70px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #efefef;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    flex: auto;
+    height: 48px;
+    margin: 0 8px 0 8px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    background-color: #efefef;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.search i{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;    
+}
+
+.search input{
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+}
+
+.noti{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.noti i{
+    height: 24px;
+    width: 24px;
+}
+
+.noti a{
+    text-decoration: none;
+}
+
+.enlace{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.perfil{
+    background-color: #efefef;
+}
+
+main{
+    margin-top: 65px;
+}
+
+@media screen and (min-width: 480px) and (min-height: 480px){
+    .indexg{
+        display: flex;
+    }
+
+    .noti:hover{
+        background-color: #efefef;
+    }
+
+    .perfil:hover{
+        width: 48px;
+        height: 48px;
+    }
+
+    .search{
+        display: flex;
+    }
+
+    .indexc{
+        display: none;
+    }
+
+    .searchc{
+        display: none;
+    }
 }
