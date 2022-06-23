@@ -1,12 +1,1114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script/funcion.js"></script>
     <title>Pinterest</title>
 </head>
 <body>
-    
+    <header class="columns">
+        <div class="rows contenedor">
+            <div class="icono">
+                <img src="img/icono.png" alt="Inicio">
+            </div>
+            
+            <div class="rows indexg">
+                <div class="rows pestaña activo" id="inicio">
+                    <a href="#" onclick="javascript:inicio();">Inicio</a>
+                </div>
+                <div class="rows pestaña inactivo" id="hoy">
+                    <a href="#" onclick="javascript:hoy();">Hoy</a>
+                </div>
+            </div>
+
+            <div class="indexc desplegable">
+                <div class="rows pestaña activo">
+                    <a href="#" onclick="javascript:inicio();">Inicio</a>
+                </div>
+                <div class="rows pestaña contenido inactivo">
+                    <a href="#" onclick="javascript:hoy();">Hoy</a>
+                </div>
+            </div>
+            
+            <div class="rows search">
+                <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
+                <input type="text" placeholder="Buscar">
+            </div>
+
+            <div class="rows noti searchc">
+                <div class="tooltip">
+                    <a href="#"><i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i></a>
+                    <span class="tooltiptext">Buscar</span>
+                </div>
+            </div>
+
+            <div class="rows noti">
+                <div class="tooltip">
+                    <a href="#"><i class="em em-bell" aria-disabled="false" aria-label="Notificaciones"></i></a>
+                    <span class="tooltiptext">Notificaciones</span>
+                </div>
+            </div>
+            <div class="rows noti">
+                <div class="tooltip">
+                    <a href="#"><i class="em em-speech_balloon" aria-role="presentation" aria-label="SPEECH BALLOON"></i></a>
+                    <span class="tooltiptext">Mensajes</span>
+                </div>
+            </div>
+            <div class="rows noti">
+                <a href="#">
+                    <div class="rows enlace perfil">
+                        <div class="tooltip">
+                            T
+                            <span class="tooltiptext">Tu perfil</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rows noti">
+                <a href="#">
+                    <div class="rows enlace">
+                        <ion-icon size="large" name="chevron-down" style="color: white;"></ion-icon>
+                    </div>
+                </a>
+            </div>
+    </header>
+
+    <main>
+        <div class="rows cuadricula ver" id="main1">
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline" class="iconoimagen"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline" class="iconoimagen"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
+            </div>
+                
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
+                </div>
+            </div>
+            
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/sol12.jpg" alt="Sol" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
+                </div>
+            </div>
+            
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/21-ardilla.jpg" alt="Ardilla" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/22-leon.jpg" alt="Leon" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/23-dexter.jpg" alt="Lab. Dexter" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/23-michael.jpg" alt="Michael Jackson" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/24-coraje.jpg" alt="Perro-Coraje" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/25jerry.jpg" alt="Jerry" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/26-pika.jpg" alt="Pikachu-Pokemon" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/27-papas.jpg" alt="Platillo-Comida" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/28-hambur.jpg" alt="hamburgesa" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/28-pizza.jpg" alt="pizza" class="roundImage">
+                </div>
+            </div>
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
+            </div>
+                
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
+                </div>
+            </div>
+        </div>
+
+        <div class="rows cuadricula nover" id="main2">                 
+            
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/sol12.jpg" alt="Sol" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
+                </div>
+            </div>
+            
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/21-ardilla.jpg" alt="Ardilla" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/22-leon.jpg" alt="Leon" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/23-dexter.jpg" alt="Lab. Dexter" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/23-michael.jpg" alt="Michael Jackson" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/24-coraje.jpg" alt="Perro-Coraje" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/25jerry.jpg" alt="Jerry" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/26-pika.jpg" alt="Pikachu-Pokemon" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/27-papas.jpg" alt="Platillo-Comida" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/28-hambur.jpg" alt="hamburgesa" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/28-pizza.jpg" alt="pizza" class="roundImage">
+                </div>
+            </div>
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
+            </div>
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
+                </div>
+            </div>
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/sol12.jpg" alt="Sol" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
+                </div>
+            </div>
+            
+
+            <div class="columna1">
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
+                </div>
+                <div class="item">
+                    <a href="#"><div class="rows botondescarga">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns puntos">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div></a>
+                    <a href="#"><div class="columns botonguardar">
+                        <div>Guardar</div>
+                    </div></a>
+                    <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="columns ayuda">
+            <div class="rows botonesdiv">
+                <div class="tooltip2">
+                    <a href="#"><h1>+</h1></a>
+                    <span class="tooltiptext2">Agregar</span>
+                </div>
+            </div>
+            <div class="rows botonesdiv">
+                <div class="tooltip2">
+                    <a href="#top"><h1>?</h1></a>
+                    <span class="tooltiptext2">Ayuda</span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
