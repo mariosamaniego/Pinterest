@@ -3,28 +3,36 @@ body{
     padding: 0;
 }
 
-header{
-    background-color: white;
-    width: 100%;
-    height: 56px;
+.columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rows{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 56px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .contenedor{
     background-color: white;
     width: 100%;
     height: 56px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     box-sizing: border-box;
-    justify-content: space-between;
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .icono{
@@ -42,20 +50,15 @@ header{
 
 .indexg{
     display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .pestaña{
     min-width: 60px;
     height: 48px;
     padding: 0 16px 0 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 24px;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .pestaña a{
@@ -81,18 +84,16 @@ header{
     color: black;
 }
 
-.desplegable:hover .contenido{
-    display: flex;
-}
-
 .contenido{
     min-width: 70px;
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
     background-color: #efefef;
-    justify-content: center;
-    align-items: center;
+}
+
+.desplegable:hover .contenido{
+    display: flex;
 }
 
 .search{
@@ -103,8 +104,6 @@ header{
     box-sizing: border-box;
     background-color: #efefef;
     display: none;
-    flex-direction: row;
-    align-items: center;
     padding-left: 16px;
 }
 
@@ -126,14 +125,11 @@ header{
 }
 
 .noti{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     border-radius: 100%;
     width: 48px;
     height: 48px;
+    justify-content: center;
 }
 
 .noti i{
@@ -149,12 +145,9 @@ header{
     width: 24px;
     height: 24px;
     border-radius: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .perfil{
@@ -165,9 +158,129 @@ main{
     margin-top: 65px;
 }
 
-@media screen and (min-width: 480px) and (min-height: 480px){
+.item{
+    position: relative;
+}
+
+.item:hover .botondescarga{
+    display: flex;
+}
+
+.item:hover .puntos{
+    display: flex;
+}
+
+.roundImage {
+    border-radius: 10px;
+    transition: 0.3s;
+    opacity: 1;
+    width: 100%;
+}
+
+.roundImage:hover{
+    opacity: 0.6;
+    box-shadow: 10px 10px 5px rgba(255, 72, 0, 0.342) ;
+}
+
+.cuadricula{
+    justify-content: left;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+.columna1{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.ayuda{
+    z-index: 1;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    margin: 16px 16px;
+}
+
+.botonesdiv{
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 8px 8px;
+    padding: 4px 4px;
+    border: none;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+}
+
+.botonesdiv h1{
+    margin: 0;
+    color: black;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botonesdiv a{
+    text-decoration: none;
+}
+
+.botondescarga{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px 4px;
+    justify-content: center;
+    opacity: .7;
+}
+
+.puntos{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 60px;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px 4px;
+    justify-content: center;
+    opacity: .7;
+}
+
+
+.ver{
+    display: flex;
+}
+
+.nover{
+    display: none;
+}
+
+@media screen and (min-width:480px) and (min-height:480px){
+    .columna1{
+        width: 33%;
+    }
+
+    .botonesdiv{
+        margin: 10px 16px;
+        height: 48px;
+        width: 48px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height:600px){
     .indexg{
         display: flex;
+    }
+
+    .indexc{
+        display: none;
     }
 
     .noti:hover{
@@ -183,26 +296,17 @@ main{
         display: flex;
     }
 
-    .indexc{
-        display: none;
-    }
-
     .searchc{
         display: none;
     }
+
+    .columna1{
+        width: 25%;
+    }
+
+    .botonesdiv{
+        margin: 10px 16px;
+        height: 48px;
+        width: 48px;
+    }
 }
-
-
-.roundImage {
-    border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-    transition: 0.3s;
-    opacity: 1;
-    margin: 5px;
-}
-
-.roundImage:hover {
-    opacity: 0.6
-}
-
