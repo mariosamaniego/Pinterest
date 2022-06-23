@@ -6,253 +6,851 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script/funcion.js"></script>
     <title>Pinterest</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
+    <header class="columns">
+        <div class="rows contenedor">
             <div class="icono">
-                <img src="img/icono.png" alt="">
+                <img src="img/icono.png" alt="Inicio">
             </div>
             
-            <div class="indexg">
-                <div class="pestaña activo" id="inicio">
+            <div class="rows indexg">
+                <div class="rows pestaña activo" id="inicio">
                     <a href="#" onclick="javascript:inicio();">Inicio</a>
                 </div>
-                <div class="pestaña inactivo" id="hoy">
+                <div class="rows pestaña inactivo" id="hoy">
                     <a href="#" onclick="javascript:hoy();">Hoy</a>
                 </div>
             </div>
 
             <div class="indexc desplegable">
-                <div class="pestaña activo">
-                    <a href="#">Inicio</a>
+                <div class="rows pestaña activo">
+                    <a href="#" onclick="javascript:inicio();">Inicio</a>
                 </div>
-                <div class="pestaña inactivo contenido">
-                    <a href="">Hoy</a>
+                <div class="rows pestaña inactivo contenido">
+                    <a href="#" onclick="javascript:hoy();">Hoy</a>
                 </div>
             </div>
             
-            <div class="search">
+            <div class="rows search">
                 <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
                 <input type="text" placeholder="Buscar">
             </div>
 
-            <div class="noti searchc">
+            <div class="rows noti searchc">
                 <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
             </div>
 
-            <div class="noti">
-                <a href="#"><i class="em em-bell" aria-role="presentation" aria-label="BELL"></i></a>
+            <div class="rows noti">
+                <a href="#"><i class="em em-bell" aria-disabled="false" aria-label="Notificaciones"></i></a>
             </div>
-            <div class="noti">
+            <div class="rows noti">
                 <a href="#"><i class="em em-speech_balloon" aria-role="presentation" aria-label="SPEECH BALLOON"></i></a>
             </div>
-            <div class="noti">
+            <div class="rows noti">
                 <a href="#">
-                    <div class="enlace perfil">
+                    <div class="rows enlace perfil">
                         T
                     </div>
                 </a>
             </div>
-            <div class="noti">
+            <div class="rows noti">
                 <a href="#">
-                    <div class="enlace">
-                        V
+                    <div class="rows enlace">
+                        <ion-icon size="large" name="chevron-down"></ion-icon>
                     </div>
                 </a>
             </div>
     </header>
 
     <main>
-        <section class="cuadricula">
+        <div class="rows cuadricula ver" id="main1">
             <div class="columna1">
-                <article>
-                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage">
-                    <h3>Girasol</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
-                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage">
-                    <h3>Ojo Fantasia</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
-                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage">
-                    <h3>Foco</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
-                    <img src="img/botella4.jpg" alt="Botella" class="roundImage">
-                    <h3>Botella fantasia</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
-                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage">
-                    <h3>Fotografia</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
             </div>
-            
-
-            <div class="columna2">
-                <article>
-                <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
-                <h3>Paisaje</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
-                    <h3>Lupa</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
-                    <h3>Hongo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
-                    <h3>Esfera</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
-                    <h3>Plato Comida</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                </div>
             </div>
             
 
             <div class="columna1">
-                <article>
-                <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
-                <h3>Imagen Fantasia</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/sol12.jpg" alt="Sol" class="roundImage">
-                    <h3>Atardecer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
-                    <h3>incendio</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
-                    <h3>Cielo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
-                    <h3>Mujer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                </div>
             </div>
             
 
-            <div class="columna2">
-                <article>
-                <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
-                <h3>Cohete</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
-                    <h3>Equipo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
-                    <h3>Perro</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
-                    <h3>Mapache</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
-                    <h3>Gato</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                </div>
             </div>
             
             <div class="columna1">
-                <article>
-                <img src="img/21-ardilla.jpg" alt="Ardilla" class="roundImage">
-                <h3>Ardilla</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/21-ardilla.jpg" alt="Ardilla" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/22-leon.jpg" alt="Leon" class="roundImage">
-                    <h3>Leon Salvaje</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/23-dexter.jpg" alt="Lab. Dexter" class="roundImage">
-                    <h3>Dexter Lab</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/23-michael.jpg" alt="Michael Jackson" class="roundImage">
-                    <h3>MichaelJackson</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/24-coraje.jpg" alt="Perro-Coraje" class="roundImage">
-                    <h3>Coraje</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                </div>
             </div>
             
-            <div class="columna2">
-                <article>
-                <img src="img/25jerry.jpg" alt="Jerry" class="roundImage">
-                <h3>Jerry</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/25jerry.jpg" alt="Jerry" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/26-pika.jpg" alt="Pikachu-Pokemon" class="roundImage">
-                    <h3>Pikachu</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/27-papas.jpg" alt="Platillo-Comida" class="roundImage">
-                    <h3>Papas</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/28-hambur.jpg" alt="hamburgesa" class="roundImage">
-                    <h3>Hamburgesa</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
-                <article>
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                     <img src="img/28-pizza.jpg" alt="pizza" class="roundImage">
-                    <h3>Pizza</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </article>
+                </div>
+            </div>
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
+            </div>
+                
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
+                </div>
+            </div>
+        </div>
+
+        <div class="rows cuadricula nover" id="main2">                 
+            
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/sol12.jpg" alt="Sol" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
+                </div>
             </div>
             
 
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/21-ardilla.jpg" alt="Ardilla" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/22-leon.jpg" alt="Leon" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/23-dexter.jpg" alt="Lab. Dexter" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/23-michael.jpg" alt="Michael Jackson" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/24-coraje.jpg" alt="Perro-Coraje" class="roundImage">
+                </div>
+            </div>
+            
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/25jerry.jpg" alt="Jerry" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/26-pika.jpg" alt="Pikachu-Pokemon" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/27-papas.jpg" alt="Platillo-Comida" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/28-hambur.jpg" alt="hamburgesa" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/28-pizza.jpg" alt="pizza" class="roundImage">
+                </div>
+            </div>
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/girasoles1.jpg" alt="Girasoles" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/Ojocolor2.jpg" alt="Ojo de color" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/thestocks3.jpg" alt="Foco" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/botella4.jpg" alt="Botella" class="roundImage ">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/foto5.jpg" alt="Fotografia" class="roundImage ">
+                </div>
+            </div>
 
-            <!--<article>
-                <img src="img/29-pasta.jpg" alt="Pasta" class="roundImage">
-                <h3>Pasta</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </article>
-            <article>
-                <img src="img/30arroz.jpg" alt="Arroz" class="roundImage">
-                <h3>Arroz</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </article>-->
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/paisaje6.jpg" alt="Paisaje" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/lupa7jpg.jpg" alt="Lupa" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/hongo8.jpg" alt="Hongo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/esfera9.jpg" alt="esfera" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/plato10.jpg" alt="Plato de comida" class="roundImage">
+                </div>
+            </div>
 
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/11-images.jpg" alt="imagen irreal" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/sol12.jpg" alt="Sol" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/13-fuego.jpg" alt="Fuego" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/14-cielo.jpg" alt="Cielo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/15-mujer.jpg" alt="Mujer" class="roundImage">
+                </div>
+            </div>
+            
 
-        </section>
+            <div class="columna1">
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/16-cohete.jpg" alt="Cohete espacial" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/17-equipo.jpg" alt="Equipo de Trabajo" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/18-dog.jpg" alt="Perro-Mascota" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/19-mapache.jpg" alt="Mapache" class="roundImage">
+                </div>
+                <div class="item">
+                    <div class="rows puntos">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <div class="columns botondescarga">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                    <img src="img/20-gato.jpg" alt="Gato" class="roundImage">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="columns ayuda">
+            <div class="rows botonesdiv">
+                <a href="#"><h1>+</h1></a> 
+            </div>
+            <div class="rows botonesdiv">
+                <a href="#"><h1>?</h1></a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
