@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,19 +41,32 @@
             </div>
 
             <div class="rows noti searchc">
-                <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
+                <div class="tooltip">
+                    <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
+                    <span class="tooltiptext">Buscar</span>
+                </div>
+                
             </div>
 
             <div class="rows noti">
-                <a href="#"><i class="em em-bell" aria-disabled="false" aria-label="Notificaciones"></i></a>
+                <div class="tooltip">
+                    <a href="#"><i class="em em-bell" aria-disabled="false" aria-label="Notificaciones"></i></a>
+                    <span class="tooltiptext">Notificaciones</span>
+                </div>
             </div>
             <div class="rows noti">
-                <a href="#"><i class="em em-speech_balloon" aria-role="presentation" aria-label="SPEECH BALLOON"></i></a>
+                <div class="tooltip">
+                    <a href="#"><i class="em em-speech_balloon" aria-role="presentation" aria-label="SPEECH BALLOON"></i></a>
+                    <span class="tooltiptext">Mensajes</span>
+                </div>
             </div>
             <div class="rows noti">
                 <a href="#">
                     <div class="rows enlace perfil">
-                        T
+                        <div class="tooltip">
+                            T
+                            <span class="tooltiptext">Tu perfil</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -845,10 +858,16 @@
 
         <div class="columns ayuda">
             <div class="rows botonesdiv">
-                <a href="#"><h1>+</h1></a> 
+                <div class="tooltip2">
+                    <a href="#"><h1>+</h1></a>
+                    <span class="tooltiptext2">Agregar</span>
+                </div>
             </div>
             <div class="rows botonesdiv">
-                <a href="#"><h1>?</h1></a>
+                <div class="tooltip2">
+                    <a href="#top"><h1>?</h1></a>
+                    <span class="tooltiptext2">Ayuda</span>
+                </div>
             </div>
         </div>
     </main>
